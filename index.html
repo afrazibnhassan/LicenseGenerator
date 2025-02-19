@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📜 License Generator</h1>
+        <p><strong>What is a license?</strong>  
+            A software license is a legal document that grants permissions on how software can be used, modified, and shared.  
+            Choose a license type, enter your details, and generate your own license instantly!</p>
+
+        <label for="nameInput">🔹 Your Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+
+        <label for="yearInput">📅 Year:</label>
+        <input type="text" id="yearInput" placeholder="Enter the year" value="2025">
+
+        <label for="licenseType">📄 Select a License Type:</label>
+        <select id="licenseType">
+            <option value="MIT">MIT License</option>
+            <option value="GPL">GNU GPL v3</option>
+            <option value="Apache">Apache License 2.0</option>
+            <option value="BSD">BSD 3-Clause License</option>
+            <option value="MPL">Mozilla Public License 2.0</option>
+            <option value="EPL">Eclipse Public License 2.0</option>
+            <option value="AGPL">GNU AGPL v3</option>
+            <option value="CC">Creative Commons (CC BY 4.0)</option>
+            <option value="Unlicense">The Unlicense</option>
+            <option value="Zlib">Zlib License</option>
+        </select>
+
+        <button onclick="generateLicense()">🔄 Generate License</button>
+
+        <textarea id="outputArea" placeholder="Your generated license will appear here..." readonly></textarea>
+
+        <div class="buttons">
+            <button onclick="copyLicense()">📋 Copy License</button>
+            <button onclick="downloadLicense()">⬇️ Download License</button>
+        </div>
+
+        <footer>
+            <p>© 2025 Copyright Afraz Hassan | <a href="https://github.com/afrazibnhassan" target="_blank">GitHub</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

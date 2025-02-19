@@ -1,0 +1,23 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore log files
+*.log
+
+# Ignore backups or temp files
+*.swp
+*.swo
+*.bak
+
+# Ignore build artifacts (if any)
+dist/
+build/
+
+# Ignore generated files (if applicable)
+generated_licenses/
+*.pdf
